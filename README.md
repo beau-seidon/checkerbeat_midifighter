@@ -4,4 +4,4 @@ diy arcade button beatpad made from trash
 
 has knobs and stick
 
-![cbmf](./images/checkerbeat_midifighter.jpg)
+![cbmf](./other%20resources/images/checkerbeat_midifighter.jpg)
