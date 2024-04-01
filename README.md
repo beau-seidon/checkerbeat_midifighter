@@ -1,6 +1,3 @@
-# checkerbeat
-diy arcade button beatpad made from trash
-
 # checkerbeat midifighter
 diy arcade button beatpad made from trash
 has knobs and stick
