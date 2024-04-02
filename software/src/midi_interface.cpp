@@ -52,7 +52,7 @@ void buttons_to_midi(byte shiftreg1, byte shiftreg2) {
             if (shiftreg2 & 0x01 == 1) {
                 if(!noteOn[i] && debounce(i)) {
                     noteOn[i] = true;
-                    midi2.sendNoteOn((BUTTON_MAP[i]), DEFAULT_VELOCITY, MIDI_CHANNEL);                    
+                    midi2.sendNoteOn((BUTTON_MAP[i]), DEFAULT_VELOCITY, MIDI_CHANNEL);
                     digitalWrite(LED_BUILTIN, HIGH);
                     Ta = millis();
                     Tb[i] = millis();
@@ -84,7 +84,6 @@ void midi_handler() {
 }
 
 
-
 /*
 void pots_to_midi() {
     for(int i = 1; i < 3; i++){
@@ -108,11 +107,11 @@ void joystick_to_midi() {
 //    if(js_changed(joystick_x, prev_joystick_x)) {
     if(joystick_x != prev_joystick_x) {
         // midi2.sendPitchBend(joystick_x, MIDI_CHANNEL);
-        // midi2.sendControlChange(JS_CC[0], joystick_x, MIDI_CHANNEL); 
+        // midi2.sendControlChange(JS_CC[0], joystick_x, MIDI_CHANNEL);
         prev_joystick_x = joystick_x;
     }
     if(joystick_y != prev_joystick_y) {
-        midi2.sendControlChange(JS_CC[1], joystick_y, MIDI_CHANNEL); 
+        midi2.sendControlChange(JS_CC[1], joystick_y, MIDI_CHANNEL);
         prev_joystick_y = joystick_y;
     }
 }

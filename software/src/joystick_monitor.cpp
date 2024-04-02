@@ -24,8 +24,8 @@ float js_y_deadzone = 0;
 
 
 void joystick_setup() {
-	pinMode(JOYSTICK_PINS[0], INPUT);  // X-Axis (mod wheel)
-	pinMode(JOYSTICK_PINS[1], INPUT);  // Y-Axis (pitch wheel)
+    pinMode(JOYSTICK_PINS[0], INPUT);  // X-Axis (mod wheel)
+    pinMode(JOYSTICK_PINS[1], INPUT);  // Y-Axis (pitch wheel)
 }
 
 

@@ -7,9 +7,9 @@ int prev_pots[3] = {-1};
 
 
 void pot_setup() {
-	pinMode(POT_PINS[0], INPUT);  // Velocity
-	pinMode(POT_PINS[1], INPUT);  // CC#20
-	pinMode(POT_PINS[2], INPUT);  // CC#21
+    pinMode(POT_PINS[0], INPUT);  // Velocity
+    pinMode(POT_PINS[1], INPUT);  // CC#20
+    pinMode(POT_PINS[2], INPUT);  // CC#21
 }
 
 
